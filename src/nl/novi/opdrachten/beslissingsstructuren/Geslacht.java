@@ -9,6 +9,16 @@ public class Geslacht {
         System.out.println("Wat is uw geslacht?");
         String geslacht = userInputScanner.nextLine();
 
+        if (geslacht.equalsIgnoreCase("m") ) {
+            System.out.println("Dag meneer");
+        } else if (geslacht.equalsIgnoreCase("v")) {
+            System.out.println("Dag mevrouw");
+        } else {
+            System.out.println("Dag Persoon");
+        }
+    }
+
+
         /*
         Hier boven heeft de gebruiker zijn geslacht ingevoerd. Print met behulp van een beslissingsstructuur (if/else)
         de volgende berichten:
@@ -19,6 +29,6 @@ public class Geslacht {
         Bonus: Lukt het je om de code zo te maken dat hoofdletters genegeerd worden?
          */
 
-    }
-
 }
+
+
