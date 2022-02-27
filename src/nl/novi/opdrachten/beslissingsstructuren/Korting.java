@@ -8,8 +8,20 @@ public class Korting {
 
         System.out.println("Wat is het aankoopbedrag?");
         double aankoopBedrag = userInputScanner.nextDouble();
+        String korting;
+        if (aankoopBedrag >= 300 ){
+            korting = "16%";
+            System.out.println("De klant krijgt " +korting+ " korting. Het aankoopbedrag wordt €" +aankoopBedrag* 0.84);
+        }
+            else if (aankoopBedrag >= 75 ){
+            korting = "10%";
+                System.out.println("De klant krijgt " +korting+ " korting. Het aankoopbedrag is nu €" +aankoopBedrag* 0.9 );
+        }
+        else {
+            System.out.println("De klant krijgt geen korting. Het aankoopbedrag blijft €"+aankoopBedrag);
+        }
 
-        /*
+            /*
         Hierboven is het aankoopbedrag ingevoerd. Het is de bedoeling dat jij de korting bepaalt en het nieuwe bedrag
         uitrekent.
 
